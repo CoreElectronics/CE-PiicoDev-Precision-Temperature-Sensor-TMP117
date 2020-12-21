@@ -9,14 +9,11 @@ The TMP117 is a low-power, high-precision temperature sensor with an accuracy up
 On-board jumpers allow for selecting four different addresses.
 
 # License
----
 This project is open source - please review the LICENSE.md file for further licensing information.
 
 If you have any technical questions, or concerns about licensing, please contact technical support on the [Core Electronics forums](https://forum.core-electronics.com.au/).
 
 # Attribution
----
 The hardware design of this module is influenced by the design from [Sparkfun](https://github.com/sparkfun/SparkFun_High_Precision_Temperature_Sensor_TMP117_Qwiic).
 
----
 *\"PiicoDev\" and the PiicoDev logo are trademarks of Core Electronics Pty Ltd.*
