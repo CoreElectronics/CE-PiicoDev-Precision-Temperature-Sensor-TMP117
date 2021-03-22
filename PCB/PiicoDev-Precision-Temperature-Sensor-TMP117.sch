@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PiicoDev Precision Temperature Sensor TMP117"
-Date "2020-12-21"
+Date "2021-03-23"
 Rev "10"
 Comp ""
 Comment1 "Designed at Core Electronics by Michael Ruppe"
