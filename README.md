@@ -2,7 +2,7 @@
 
 ![](Documents/showcase-render.png)
 
-This is the repo for the Core Electronics [PiicoDev Precision Temperature Sensor TMP117](https://core-electronics.com.au/catalog/product/view/sku/CE07693).
+This is the repo for the Core Electronics [PiicoDev Precision Temperature Sensor TMP117](https://core-electronics.com.au/catalog/product/view/sku/CE07502).
 
 The PiicoDev Precision Temperature Sensor features a low-power, high precision TMP117 with 16-bit resolution and an accuracy of ±0.1°C (across -20°C to +50°C) with no calibration required. The full operating range is -55°C to +150°C.
 
