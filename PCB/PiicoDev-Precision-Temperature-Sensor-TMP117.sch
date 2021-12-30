@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PiicoDev Precision Temperature Sensor TMP117"
-Date "2021-03-23"
-Rev "10"
+Date "2021-12-23"
+Rev "11"
 Comp ""
 Comment1 "Designed at Core Electronics by Michael Ruppe"
 Comment2 "PiicoDev and the PiicoDev logo are trademarks of Core Electronics Pty Ltd."
@@ -44,7 +44,7 @@ L Device:R R4
 U 1 1 5F90E922
 P 6800 3150
 F 0 "R4" H 6870 3196 50  0000 L CNN
-F 1 "4k7" H 6870 3105 50  0000 L CNN
+F 1 "10k" H 6870 3105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6730 3150 50  0001 C CNN
 F 3 "~" H 6800 3150 50  0001 C CNN
 	1    6800 3150
@@ -72,7 +72,7 @@ L Device:R R3
 U 1 1 5F90E7BD
 P 6200 3150
 F 0 "R3" H 6270 3196 50  0000 L CNN
-F 1 "4k7" H 6270 3105 50  0000 L CNN
+F 1 "10k" H 6270 3105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6130 3150 50  0001 C CNN
 F 3 "~" H 6200 3150 50  0001 C CNN
 	1    6200 3150
@@ -95,10 +95,10 @@ Connection ~ 6200 3800
 Wire Wire Line
 	6200 3800 7250 3800
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0101
 U 1 1 5F91090E
 P 6500 2400
-F 0 "#PWR?" H 6500 2250 50  0001 C CNN
+F 0 "#PWR0101" H 6500 2250 50  0001 C CNN
 F 1 "+3V3" H 6515 2573 50  0000 C CNN
 F 2 "" H 6500 2400 50  0001 C CNN
 F 3 "" H 6500 2400 50  0001 C CNN
@@ -113,7 +113,7 @@ U 1 1 5F911599
 P 5350 2700
 F 0 "JP2" V 5304 2768 50  0000 L CNN
 F 1 "INT" V 5395 2768 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5350 2700 50  0001 C CNN
+F 2 "CoreElectronics_Components:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 5350 2700 50  0001 C CNN
 F 3 "~" H 5350 2700 50  0001 C CNN
 	1    5350 2700
 	0    1    1    0   
@@ -125,10 +125,10 @@ Wire Wire Line
 Wire Wire Line
 	5350 3100 5350 2850
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0102
 U 1 1 5F911A37
 P 5350 2400
-F 0 "#PWR?" H 5350 2250 50  0001 C CNN
+F 0 "#PWR0102" H 5350 2250 50  0001 C CNN
 F 1 "+3V3" H 5365 2573 50  0000 C CNN
 F 2 "" H 5350 2400 50  0001 C CNN
 F 3 "" H 5350 2400 50  0001 C CNN
@@ -138,10 +138,10 @@ $EndComp
 Wire Wire Line
 	5350 2550 5350 2400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0103
 U 1 1 5F912368
 P 4650 4250
-F 0 "#PWR?" H 4650 4000 50  0001 C CNN
+F 0 "#PWR0103" H 4650 4000 50  0001 C CNN
 F 1 "GND" H 4655 4077 50  0000 C CNN
 F 2 "" H 4650 4250 50  0001 C CNN
 F 3 "" H 4650 4250 50  0001 C CNN
@@ -151,10 +151,10 @@ $EndComp
 Wire Wire Line
 	4650 4250 4650 4200
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0104
 U 1 1 5F91281A
 P 4650 3350
-F 0 "#PWR?" H 4650 3200 50  0001 C CNN
+F 0 "#PWR0104" H 4650 3200 50  0001 C CNN
 F 1 "+3V3" H 4665 3523 50  0000 C CNN
 F 2 "" H 4650 3350 50  0001 C CNN
 F 3 "" H 4650 3350 50  0001 C CNN
@@ -175,10 +175,10 @@ F 3 "~" H 2900 4100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 5F914478
 P 2900 4300
-F 0 "#PWR?" H 2900 4050 50  0001 C CNN
+F 0 "#PWR0105" H 2900 4050 50  0001 C CNN
 F 1 "GND" H 2905 4127 50  0000 C CNN
 F 2 "" H 2900 4300 50  0001 C CNN
 F 3 "" H 2900 4300 50  0001 C CNN
@@ -188,10 +188,10 @@ $EndComp
 Wire Wire Line
 	2900 4300 2900 4250
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0106
 U 1 1 5F914ABC
 P 2900 3200
-F 0 "#PWR?" H 2900 3050 50  0001 C CNN
+F 0 "#PWR0106" H 2900 3050 50  0001 C CNN
 F 1 "+3V3" H 2915 3373 50  0000 C CNN
 F 2 "" H 2900 3200 50  0001 C CNN
 F 3 "" H 2900 3200 50  0001 C CNN
@@ -204,7 +204,7 @@ U 1 1 5F9150B4
 P 2900 3400
 F 0 "JP1" V 2854 3468 50  0000 L CNN
 F 1 "LED" V 2945 3468 50  0000 L CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2900 3400 50  0001 C CNN
+F 2 "CoreElectronics_Components:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2900 3400 50  0001 C CNN
 F 3 "~" H 2900 3400 50  0001 C CNN
 	1    2900 3400
 	0    1    1    0   
@@ -216,7 +216,7 @@ L Device:R R1
 U 1 1 5F915BCC
 P 2900 3750
 F 0 "R1" H 2970 3796 50  0000 L CNN
-F 1 "4k7" H 2970 3705 50  0000 L CNN
+F 1 "10k" H 2970 3705 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2830 3750 50  0001 C CNN
 F 3 "~" H 2900 3750 50  0001 C CNN
 	1    2900 3750
@@ -232,66 +232,21 @@ Text Notes 4450 2750 0    50   ~ 0
 Clear jumper \nto remove INT pullup
 Text Notes 6650 2650 0    50   ~ 0
 Clear jumper \nto remove I2C pullup
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP5
-U 1 1 5F91EF58
-P 8450 4200
-F 0 "JP5" H 8450 4313 50  0000 C CNN
-F 1 " " H 8450 4404 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm" H 8450 4200 50  0001 C CNN
-F 3 "~" H 8450 4200 50  0001 C CNN
-	1    8450 4200
-	1    0    0    1   
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP4
-U 1 1 5F9203D2
-P 8450 3750
-F 0 "JP4" H 8450 3955 50  0000 C CNN
-F 1 " " H 8450 3864 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 8450 3750 50  0001 C CNN
-F 3 "~" H 8450 3750 50  0001 C CNN
-	1    8450 3750
-	1    0    0    -1  
-$EndComp
-Text Label 8700 4200 0    50   ~ 0
+Text Label 8050 4500 0    50   ~ 0
 SDA
-Wire Wire Line
-	8650 4200 8700 4200
-Text Label 8700 3750 0    50   ~ 0
+Text Label 9950 4000 0    50   ~ 0
 SCL
-Wire Wire Line
-	8650 3750 8700 3750
 $Comp
-L power:GND #PWR?
-U 1 1 5F923D24
-P 8100 4300
-F 0 "#PWR?" H 8100 4050 50  0001 C CNN
-F 1 "GND" H 8105 4127 50  0000 C CNN
-F 2 "" H 8100 4300 50  0001 C CNN
-F 3 "" H 8100 4300 50  0001 C CNN
-	1    8100 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0107
 U 1 1 5F92437B
-P 8100 3300
-F 0 "#PWR?" H 8100 3150 50  0001 C CNN
-F 1 "+3V3" H 8115 3473 50  0000 C CNN
-F 2 "" H 8100 3300 50  0001 C CNN
-F 3 "" H 8100 3300 50  0001 C CNN
-	1    8100 3300
+P 8300 3050
+F 0 "#PWR0107" H 8300 2900 50  0001 C CNN
+F 1 "+3V3" H 8315 3223 50  0000 C CNN
+F 2 "" H 8300 3050 50  0001 C CNN
+F 3 "" H 8300 3050 50  0001 C CNN
+	1    8300 3050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8100 3300 8100 3350
-Wire Wire Line
-	8100 3750 8250 3750
-Wire Wire Line
-	8100 4300 8100 4200
-Wire Wire Line
-	8100 4200 8250 4200
 $Comp
 L Device:C C1
 U 1 1 5F925AB9
@@ -304,10 +259,10 @@ F 3 "~" H 3850 3750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0108
 U 1 1 5F926F9F
 P 3850 3950
-F 0 "#PWR?" H 3850 3700 50  0001 C CNN
+F 0 "#PWR0108" H 3850 3700 50  0001 C CNN
 F 1 "GND" H 3855 3777 50  0000 C CNN
 F 2 "" H 3850 3950 50  0001 C CNN
 F 3 "" H 3850 3950 50  0001 C CNN
@@ -317,10 +272,10 @@ $EndComp
 Wire Wire Line
 	3850 3950 3850 3900
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0109
 U 1 1 5F927964
 P 3850 3550
-F 0 "#PWR?" H 3850 3400 50  0001 C CNN
+F 0 "#PWR0109" H 3850 3400 50  0001 C CNN
 F 1 "+3V3" H 3865 3723 50  0000 C CNN
 F 2 "" H 3850 3550 50  0001 C CNN
 F 3 "" H 3850 3550 50  0001 C CNN
@@ -330,14 +285,8 @@ $EndComp
 Wire Wire Line
 	3850 3550 3850 3600
 Wire Notes Line
-	7800 3050 9000 3050
-Wire Notes Line
-	9000 3050 9000 4700
-Wire Notes Line
-	9000 4700 7800 4700
-Wire Notes Line
 	7800 4700 7800 3050
-Text Notes 7800 3050 0    50   ~ 0
+Text Notes 7850 2600 0    50   ~ 0
 I2C Address selection
 $Comp
 L Connector:Conn_01x04_Male J1
@@ -359,10 +308,10 @@ SDA
 Wire Wire Line
 	2300 5900 2100 5900
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0110
 U 1 1 5F9309E6
 P 2450 5800
-F 0 "#PWR?" H 2450 5650 50  0001 C CNN
+F 0 "#PWR0110" H 2450 5650 50  0001 C CNN
 F 1 "+3V3" V 2465 5928 50  0000 L CNN
 F 2 "" H 2450 5800 50  0001 C CNN
 F 3 "" H 2450 5800 50  0001 C CNN
@@ -370,10 +319,10 @@ F 3 "" H 2450 5800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0111
 U 1 1 5F930DF1
 P 2450 5700
-F 0 "#PWR?" H 2450 5450 50  0001 C CNN
+F 0 "#PWR0111" H 2450 5450 50  0001 C CNN
 F 1 "GND" V 2455 5572 50  0000 R CNN
 F 2 "" H 2450 5700 50  0001 C CNN
 F 3 "" H 2450 5700 50  0001 C CNN
@@ -404,10 +353,10 @@ SDA
 Wire Wire Line
 	2300 6700 2100 6700
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0112
 U 1 1 5F93367E
 P 2450 6600
-F 0 "#PWR?" H 2450 6450 50  0001 C CNN
+F 0 "#PWR0112" H 2450 6450 50  0001 C CNN
 F 1 "+3V3" V 2465 6728 50  0000 L CNN
 F 2 "" H 2450 6600 50  0001 C CNN
 F 3 "" H 2450 6600 50  0001 C CNN
@@ -415,10 +364,10 @@ F 3 "" H 2450 6600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0113
 U 1 1 5F933684
 P 2450 6500
-F 0 "#PWR?" H 2450 6250 50  0001 C CNN
+F 0 "#PWR0113" H 2450 6250 50  0001 C CNN
 F 1 "GND" V 2455 6372 50  0000 R CNN
 F 2 "" H 2450 6500 50  0001 C CNN
 F 3 "" H 2450 6500 50  0001 C CNN
@@ -449,10 +398,10 @@ SDA
 Wire Wire Line
 	4300 6250 4100 6250
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0114
 U 1 1 5F934CE8
 P 4450 6150
-F 0 "#PWR?" H 4450 6000 50  0001 C CNN
+F 0 "#PWR0114" H 4450 6000 50  0001 C CNN
 F 1 "+3V3" V 4465 6278 50  0000 L CNN
 F 2 "" H 4450 6150 50  0001 C CNN
 F 3 "" H 4450 6150 50  0001 C CNN
@@ -460,10 +409,10 @@ F 3 "" H 4450 6150 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0115
 U 1 1 5F934CEE
 P 4450 6050
-F 0 "#PWR?" H 4450 5800 50  0001 C CNN
+F 0 "#PWR0115" H 4450 5800 50  0001 C CNN
 F 1 "GND" V 4455 5922 50  0000 R CNN
 F 2 "" H 4450 6050 50  0001 C CNN
 F 3 "" H 4450 6050 50  0001 C CNN
@@ -503,23 +452,14 @@ $EndComp
 $Comp
 L Device:R R5
 U 1 1 5F983531
-P 8100 3500
-F 0 "R5" H 8170 3546 50  0000 L CNN
-F 1 "10k" H 8170 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 8030 3500 50  0001 C CNN
-F 3 "~" H 8100 3500 50  0001 C CNN
-	1    8100 3500
+P 8600 3550
+F 0 "R5" H 8670 3596 50  0000 L CNN
+F 1 "10k" H 8670 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8530 3550 50  0001 C CNN
+F 3 "~" H 8600 3550 50  0001 C CNN
+	1    8600 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8100 3650 8100 3750
-Wire Wire Line
-	8450 3900 8450 4000
-Wire Wire Line
-	8450 4000 5100 4000
-Connection ~ 8450 4000
-Wire Wire Line
-	8450 4000 8450 4050
 $Comp
 L Mechanical:Fiducial FID2
 U 1 1 5F9A2CE0
@@ -548,23 +488,12 @@ Wire Wire Line
 	5650 3600 5350 3600
 Connection ~ 5350 3600
 $Comp
-L CoreElectronics_Artwork:LOGO_CoreElectronics_made-with-love G1
-U 1 1 5F9B9BD6
-P 10450 6300
-F 0 "G1" H 10450 6094 60  0001 C CNN
-F 1 "LOGO_CoreElectronics_made-with-love" H 10450 6506 60  0001 C CNN
-F 2 "PiicoDev_Artwork:piicodev_logo_14.2x3.4mm" H 10450 6300 50  0001 C CNN
-F 3 "" H 10450 6300 50  0001 C CNN
-	1    10450 6300
-	1    0    0    -1  
-$EndComp
-$Comp
 L CoreElectronics_Artwork:LOGO_PiicoDev G2
 U 1 1 5FB93B59
 P 8000 6300
 F 0 "G2" H 8000 6250 60  0001 C CNN
 F 1 "LOGO_piico" H 8000 6350 60  0001 C CNN
-F 2 "Piico_Artwork:piicodev_logo_14.2x3.4mm" H 8000 6300 50  0001 C CNN
+F 2 "CoreElectronics_Artwork:piicodev_logo_14.2x3.4mm" H 8000 6300 50  0001 C CNN
 F 3 "" H 8000 6300 50  0001 C CNN
 	1    8000 6300
 	1    0    0    -1  
@@ -584,6 +513,193 @@ Text Notes 1850 5400 0    79   ~ 0
 JST connectors
 Text Notes 3800 5650 0    79   ~ 0
 breakout header
-Text Label 8300 4000 2    50   ~ 0
+$Comp
+L power:GND #PWR0116
+U 1 1 61CEAF4F
+P 9450 4650
+F 0 "#PWR0116" H 9450 4400 50  0001 C CNN
+F 1 "GND" H 9455 4477 50  0000 C CNN
+F 2 "" H 9450 4650 50  0001 C CNN
+F 3 "" H 9450 4650 50  0001 C CNN
+	1    9450 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 61D0F90A
+P 8300 3400
+F 0 "R6" H 8370 3446 50  0000 L CNN
+F 1 "10k" H 8370 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8230 3400 50  0001 C CNN
+F 3 "~" H 8300 3400 50  0001 C CNN
+	1    8300 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 4000 8600 4000
+Wire Wire Line
+	8300 3550 8300 4250
+$Comp
+L Transistor_FET:BSS138 Q1
+U 1 1 61D1F015
+P 8500 4250
+F 0 "Q1" H 8704 4296 50  0000 L CNN
+F 1 "BSS138" H 8704 4205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8700 4175 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF" H 8500 4250 50  0001 L CNN
+	1    8500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_DIP_x02 SW1
+U 1 1 61D316FD
+P 8200 4850
+F 0 "SW1" V 8154 5080 50  0000 L CNN
+F 1 "SW_DIP_x02" V 8245 5080 50  0000 L CNN
+F 2 "CoreElectronics_Components:SW_DIP_x02_Slide_CHS-02A1" H 8200 4850 50  0001 C CNN
+F 3 "~" H 8200 4850 50  0001 C CNN
+	1    8200 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8600 4450 9450 4450
+Wire Wire Line
+	9450 4450 9450 4650
+Wire Wire Line
+	8600 4050 8600 4000
+Connection ~ 8600 4000
+Wire Wire Line
+	8300 3050 8300 3200
+Connection ~ 8300 3200
+Wire Wire Line
+	8300 3200 8300 3250
+Wire Wire Line
+	8600 3400 8600 3200
+Wire Wire Line
+	8600 3200 8300 3200
+Wire Wire Line
+	8600 3700 8600 4000
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 61D438D2
+P 9300 4000
+F 0 "JP4" H 9300 4205 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 9300 4114 50  0000 C CNN
+F 2 "CoreElectronics_Components:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 9300 4000 50  0001 C CNN
+F 3 "~" H 9300 4000 50  0001 C CNN
+	1    9300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 4250 8300 4550
+Connection ~ 8300 4250
+Wire Wire Line
+	8300 5150 8300 5300
+$Comp
+L power:GND #PWR0117
+U 1 1 61D4E573
+P 8300 5300
+F 0 "#PWR0117" H 8300 5050 50  0001 C CNN
+F 1 "GND" H 8305 5127 50  0000 C CNN
+F 2 "" H 8300 5300 50  0001 C CNN
+F 3 "" H 8300 5300 50  0001 C CNN
+	1    8300 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4000 9150 4000
+Wire Wire Line
+	8050 4500 8200 4500
+Wire Wire Line
+	8200 4500 8200 4550
+Text Label 8150 4000 2    50   ~ 0
 ADD0
+Wire Wire Line
+	8200 5150 8200 5200
+Wire Wire Line
+	8200 5200 7650 5200
+Text Label 7950 5200 2    50   ~ 0
+ADD0
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 61D646BF
+P 5650 6950
+F 0 "#FLG0101" H 5650 7025 50  0001 C CNN
+F 1 "PWR_FLAG" H 5650 7123 50  0000 C CNN
+F 2 "" H 5650 6950 50  0001 C CNN
+F 3 "~" H 5650 6950 50  0001 C CNN
+	1    5650 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 61D651DE
+P 5650 7050
+F 0 "#PWR0118" H 5650 6800 50  0001 C CNN
+F 1 "GND" H 5655 6877 50  0000 C CNN
+F 2 "" H 5650 7050 50  0001 C CNN
+F 3 "" H 5650 7050 50  0001 C CNN
+	1    5650 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 61D65F51
+P 6100 7050
+F 0 "#FLG0102" H 6100 7125 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 7223 50  0000 C CNN
+F 2 "" H 6100 7050 50  0001 C CNN
+F 3 "~" H 6100 7050 50  0001 C CNN
+	1    6100 7050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0119
+U 1 1 61D67346
+P 6100 6950
+F 0 "#PWR0119" H 6100 6800 50  0001 C CNN
+F 1 "+3V3" H 6115 7123 50  0000 C CNN
+F 2 "" H 6100 6950 50  0001 C CNN
+F 3 "" H 6100 6950 50  0001 C CNN
+	1    6100 6950
+	1    0    0    -1  
+$EndComp
+Text Notes 5450 6700 0    50   ~ 0
+ERC Config
+Wire Notes Line
+	5450 6700 6300 6700
+Wire Notes Line
+	6300 6700 6300 7300
+Wire Notes Line
+	6300 7300 5450 7300
+Wire Notes Line
+	5450 7300 5450 6700
+Wire Wire Line
+	9450 4000 9950 4000
+Wire Wire Line
+	5650 6950 5650 7050
+Wire Wire Line
+	6100 6950 6100 7050
+$Comp
+L CoreElectronics_Artwork:LOGO_made-with-love G3
+U 1 1 61CE4840
+P 10600 6300
+F 0 "G3" H 10600 6094 60  0001 C CNN
+F 1 "LOGO_made-with-love" H 10600 6506 60  0001 C CNN
+F 2 "CoreElectronics_Artwork:piicodev_logo_14.2x3.4mm" H 10450 6300 50  0001 C CNN
+F 3 "" H 10450 6300 50  0001 C CNN
+	1    10600 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CoreElectronics_Artwork:LOGO_CoreElectronics_no-text G1
+U 1 1 61CE6C3D
+P 9900 6300
+F 0 "G1" H 9900 6094 60  0001 C CNN
+F 1 "LOGO_CoreElectronics_no-text" H 9900 6506 60  0001 C CNN
+F 2 "CoreElectronics_Artwork:CoreElectronics_logo_5mm" H 9900 6300 50  0001 C CNN
+F 3 "" H 9900 6300 50  0001 C CNN
+	1    9900 6300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
