@@ -7180,7 +7180,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 44a15e1c-f254-4648-a79e-78dd546b3ad3)
   )
-  (text "ASW\n  1    2   3   4\n[ON  OFF OFF OFF] 0x48\n[OFF ON  OFF OFF] 0x49\n[OFF OFF ON  OFF] 0x4A\n[OFF OFF OFF ON ] 0x4B"
+  (text "ASW: Only one switch to be ON at a time\n\n  1    2   3   4      I2C Address\n[ON  OFF OFF OFF]     0x48\n[OFF ON  OFF OFF]     0x49\n[OFF OFF ON  OFF]     0x4A\n[OFF OFF OFF ON ]     0x4B\n\nIf no ASW set, address appears to default to 0x48"
     (at 139.7 123.19 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid bca00d08-1d1a-4671-abf5-2a3e69bc9ac6)
