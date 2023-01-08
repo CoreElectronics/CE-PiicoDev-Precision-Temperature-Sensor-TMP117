@@ -39,7 +39,7 @@
   (setup
     (pad_to_mask_clearance 0)
     (aux_axis_origin 85.4936 119.5832)
-    (grid_origin 22.4 0)
+    (grid_origin 98.160176 118.4684)
     (pcbplotparams
       (layerselection 0x00010f0_ffffffff)
       (disableapertmacros false)
@@ -1982,7 +1982,7 @@
 
   (footprint "CoreElectronics_Components:PiicoDev_header_5pin_INT" (layer "B.Cu")
     (tedit 6147F300) (tstamp 00000000-0000-0000-0000-00005fcecd37)
-    (at 90.588176 118.2624 -90)
+    (at 90.540176 118.2624 -90)
     (descr "Through hole straight pin header for PiicoDev modules (with interrupt)")
     (tags "Through hole pin header THT 1x05 2.54mm single row Piico Dev")
     (property "Sheetfile" "PiicoDev-Precision-Temperature-Sensor-TMP117.kicad_sch")
